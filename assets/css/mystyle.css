@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Vollkorn:wght@500&display=swap");
+.form-group input {
+  color: black !important;
+}
+.futre {
+  /* background-image: linear-gradient(to bottom right, white , #3a92d4) !important; */
+  background-color: rgb(247, 248, 250);
+  border-top: 7px solid #4da6eb;
+  border-bottom: 7px solid #4da6eb;
+  color: #000;
+  background-size: cover;
+  padding: 5px;
+  height: 250px;
+}
+.logo_img img {
+  padding-left: 4px;
+}
+.txt-cs h2 {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.log-img {
+  height: 120px;
+}
+/* ======================== overlay============================ */
+.over-img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 4rem 2rem;
+}
+
+.aply-grd {
+  position: relative !important;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  height: 200px;
+  width: 230px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4da6eb;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+.aply-grd:hover .overlay {
+  height: 100%;
+  width: 230px;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* ========================//End============================= */
+
+@media only screen and (max-width: 996px) {
+  .over-img {
+    padding: 5px;
+  }
+}
+
+/* ========================================= */
+.tst-pad {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  background-color: transparent;
+}
+.img-slider {
+  align-items: center;
+}
+.img-hor img {
+  height: 90px;
+  width: 100px !important;
+  border: none;
+}
+.img-hor img:hover {
+  border: 5px solid rgb(248, 47, 47);
+}
+button.btn-icon {
+  width: 100px;
+}
+.slide_img {
+  width: 600px;
+  top: 40%;
+}
+.slide_img:hover {
+  border: 5px solid #4da6eb;
+}
+.img_curo img {
+  width: auto;
+  height: 375px !important;
+}
+@media screen and (max-width: 768px) {
+  .img-hor img {
+    height: 90px;
+    width: 400px;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+    .img-slider{
+      margin-left: 35%;
+    }
+  } */
+
+/* =========================================== */
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background: transparent;
+  color: rgb(252, 91, 91);
+  transform: rotateY(180deg);
+  top: 50%;
+}
+
+.gal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, fr));
+  gap: 4rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .gal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 823px) and (min-width: 411px) {
+  .flip-box {
+    width: 387px;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 200px) {
+  .flip-box {
+    width: 345px;
+  }
+}
+/* ==================================================== */
+.stand {
+  background-color: rgb(198, 218, 255);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px;
+  border-top-left-radius: 125px 75px;
+  border-bottom-right-radius: 125px 75px;
+}
+/* .section-title{
+         padding: 50px;
+        background-image: linear-gradient( rgb(0, 132, 255),#fff);
+       text-shadow:5px 5px 5px rgb(66, 119, 233);
+     } */
+.apply {
+  padding: 50px;
+}
+/* =============================================================== */
+
+/* ================================================================ */
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li {
+  padding-bottom: 10px;
+}
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #4da6eb;
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+.about button {
+  background-color: rgba(28, 109, 208, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+.about button:hover {
+  background-color: rgba(28, 109, 208, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* =============================== Maya Css Code ======================== */
+.future-plan {
+  padding: 50px 0;
+  background: linear-gradient(rgba(255, 252, 220, 1), rgba(255, 252, 220, 1));
+}
+.future-plan .future-div1 {
+  padding: 100px 10px;
+  background: linear-gradient(rgba(28, 109, 208, 0.8), rgba(28, 109, 208, 0.6)),
+    url("../img/bg1.jpg");
+  border-radius: 0 230px 230px 0;
+}
+.future-plan .future-div1 h2 {
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 3px;
+}
+.main-heading {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+.future-plan .future-div1 button {
+  color: white;
+  /* background: chartreuse; */
+  background: #ff5959;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 50px;
+}
+.future-plan .future-div1 p {
+  color: #fff;
+}
+.product-div {
+  background: #4da6eb;
+  border-radius: 50px 0 0 0;
+  padding: 0px 10px 10px 10px;
+}
+.product-div .icon1 img {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 20px;
+}
+.product-div .icon1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  /* -ms-transform: rotate(45deg); 
+  -ms-transform-origin: 20% 40%; 
+  transform: rotate(45deg); */
+  margin-top: -100px !important;
+}
+.purpose-section {
+  padding: 80px 50px !important;
+  /* background-image: linear-gradient(100deg,rgba(235, 233, 233, 0.5) 50%,rgba(2, 70, 133, 1) 50%),url('../img/bg2.jpg'); */
+  background-image: linear-gradient(
+      90deg,
+      rgba(28, 109, 208, 0.2) 60%,
+      rgba(28, 109, 208, 0.7) 40%
+    ),
+    url("../img/bg2.jpg");
+}
+.purpose-div {
+  background-color: #ff5959;
+  padding: 50px 20px !important;
+  color: white;
+}
+.product-container {
+  padding: 60px;
+  background-color: #ffffff;
+}
+.product-division {
+  padding: 20px;
+  /* border:1px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  /* background-color: grey; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+.product-image img {
+  height: 190px !important;
+  width: 100%;
+}
+.product-description {
+  background-color: rgba(28, 109, 208, 1);
+  border-radius: 50px;
+  padding: 15px;
+  width: 90%;
+  margin-bottom: -50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: white;
+}
+.product-slider {
+  border-radius: 20px;
+  background-color: rgb(212, 208, 208) !important;
+  box-shadow: rgba(27, 27, 27, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.product-slider a img {
+  height: 200px;
+  width: 200px;
+}
+.mission-div {
+  border-bottom: 5px solid rgba(28, 109, 208, 1);
+  /* border-left: 5px solid rgb(255, 255, 255);
+  border-right: 5px solid rgb(255, 255, 255);
+  border-top: 5px solid rgb(255, 255, 255); */
+  /* padding:10px; */
+  position: relative;
+  margin: 20px auto;
+}
+.mission-div img {
+  z-index: 8 !important;
+}
+.mission-div .mission-icon-div {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 5px solid white;
+  padding-top: 12px;
+  margin-top: -40px;
+  color: white;
+  background-color: rgba(28, 109, 208, 1);
+  z-index: 8 !important;
+  left: 40%;
+  position: absolute;
+}
+.mission-div p {
+  margin: 10px;
+}
+.mission-div h2 {
+  color: rgba(28, 109, 208, 1);
+  font-weight: bold;
+}
+.mission-div ul {
+  margin-top: -10px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+.mission-div ul :last-child {
+  text-align: left;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.journey-container {
+  background-image: linear-gradient(
+      300deg,
+      rgba(28, 109, 208, 1) 40%,
+      rgba(28, 109, 208, 0) 60%
+    ),
+    url("../img/bg2.jpg");
+  padding: 50px 50px;
+  color: white;
+}
+.contact-form input {
+  height: 50px;
+}
+.contact-form button {
+  background: #4da6eb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.contact-form button:hover {
+  background: #4da6eb;
+}
+.enquery-modal {
+  background-image: linear-gradient(
+      300deg,
+      rgba(7, 100, 212,0.7) 40%,
+      rgba(28, 109, 208, 0.6) 60%
+    ),
+    url("../img/bg2.jpg");
+}
+@media screen and (max-width: 768px) {
+  .mission-div ul {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+  }
+  .mission-div .mission-icon-div {
+    left: 38%;
+  }
+}
+/*=============================== End Maya Css Code ======================== */
